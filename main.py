@@ -4,7 +4,7 @@ from llama_index.llms.ollama import Ollama
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.readers.file import PDFReader
 
-# 1. Configure LLM and Embedding models with memory limits
+# 1. Configure LLM and Embedding models with memor limits
 Settings.llm = Ollama(
     model="llama3.2",
     request_timeout=120.0,
