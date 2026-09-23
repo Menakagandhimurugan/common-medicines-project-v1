@@ -4,7 +4,7 @@ from llama_index.llms.ollama import Ollama
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.readers.file import PDFReader
 
-# 1. Configure LLM and Embedding models with memory limits
+# 1. Configure LLM and Embedding models with memoryyy limits
 Settings.llm = Ollama(
     model="llama3.2",
     request_timeout=120.0,
@@ -27,7 +27,7 @@ nodes = parser.get_nodes_from_documents(documents)
 print("Indexing chunks into a local vector store...")
 index = VectorStoreIndex(nodes)
 
-# 3. Create the query engine
+# 3. Create the querii engine
 query_engine = index.as_query_engine(similarity_top_k=2)
 
 print("\n--- RAG Ready ---")
