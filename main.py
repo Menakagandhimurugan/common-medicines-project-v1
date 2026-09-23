@@ -27,7 +27,7 @@ nodes = parser.get_nodes_from_documents(documents)
 print("Indexing chunks into a local vector store...")
 index = VectorStoreIndex(nodes)
 
-# 3. Create the querii engine
+# 3. Create the query engine
 query_engine = index.as_query_engine(similarity_top_k=2)
 
 print("\n--- RAG Ready ---")
